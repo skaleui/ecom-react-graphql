@@ -1,12 +1,7 @@
 {
-  "host": "atomic-affinity-230700.appspot.com",
+  "host": "${process.env.LOCALHOST || 'localhost'}",
   "port": 1337,
-  "proxy11": {
-    "enabled": true,
-    "ssl": true,
-    "host": "atomic-affinity-230700.appspot.com",
-    "port": 443 
-  },
+
   "autoReload" : {
     "enabled": false
   },

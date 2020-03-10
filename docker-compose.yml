@@ -1,0 +1,11 @@
+version: '2.1'
+
+services:
+  ecommerce-react-graphql-stripe:
+    image: ecommerce-react-graphql-stripe
+    build: .
+    environment:
+      NODE_ENV: production
+    ports:
+      - 1337:1337
+      - 8080:8080
