@@ -14,4 +14,4 @@ EXPOSE 27017
 EXPOSE 1337
 EXPOSE 3000
 
-CMD npm install && npm run start
+CMD npm install && npm run build && npm run start
