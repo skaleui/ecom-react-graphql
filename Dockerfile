@@ -10,9 +10,13 @@ RUN cd /usr/project && git clone -b gcp-deploy --single-branch https://github.co
 
 WORKDIR /usr/project/ecom-react-graphql
 RUN cd /usr/project/ecom-react-graphql/server && npm install --silent
+RUN cd /usr/project/ecom-react-graphql/server && npm run build --silent
+
+RUN cd /usr/project/ecom-react-graphql/client && npm install --silent
+RUN cd /usr/project/ecom-react-graphql/client && npm build --silent
 
 EXPOSE 27017
 EXPOSE 1337
-EXPOSE 8080
+EXPOSE 3000
 
-CMD echo $LOCALHOST && cd server && npm run start
+CMD npm run start
