@@ -1,5 +1,5 @@
 {
-  "host": "localhost12",
+  "host": "${process.env.LOCALHOST || 'localhost'}",
   "port": 1337,
 
   "autoReload" : {

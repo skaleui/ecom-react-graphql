@@ -6,7 +6,7 @@ services:
     build: .
     environment:
       NODE_ENV: development
-      LOCALHOST: skale1122
+      LOCALHOST: localhost
     ports:
       - 1337:1337
       - 8080:8080

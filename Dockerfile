@@ -15,6 +15,4 @@ EXPOSE 27017
 EXPOSE 1337
 EXPOSE 8080
 
-ENV LOCALHOST=skale
-
-CMD echo $LOCALHOST && cd server && npm run develop
+CMD echo $LOCALHOST && cd server && npm run start
