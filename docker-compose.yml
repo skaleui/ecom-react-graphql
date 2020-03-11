@@ -1,13 +1,23 @@
 version: '2.1'
 
 services:
-  ecommerce-react-graphql-stripe:
-    image: ecommerce-react-graphql-stripe
+  client:
     build: .
+    volumes: 
+      - "./client:/usr/project/ecom-react-graphql"
     environment:
       NODE_ENV: development
-      LOCALHOST: skale1122
+      LOCALHOST: localhost
     ports:
-      - 1337:1337
-      - 8080:8080
-      - 27017:27017
+      - "3000:3000"
+
+  server:
+    build: .
+    volumes: 
+      - "./server:/usr/project/ecom-react-graphql"
+    environment:
+      NODE_ENV: development
+      LOCALHOST: localhost
+    ports:
+      - "1337:1337"
+      - "27017:27017"

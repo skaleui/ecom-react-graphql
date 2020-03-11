@@ -1,5 +1,5 @@
 {
-  "host": "localhost14",
+  "host": "${process.env.LOCALHOST || 'localhost'}",
   "port": "${process.env.PORT || 1337}",
   "production": true,
   "proxy": {
@@ -9,6 +9,6 @@
     "enabled": false
   },
   "admin": {
-    "host": "localhost14"
+    "host": "localhost"
   }
 }
