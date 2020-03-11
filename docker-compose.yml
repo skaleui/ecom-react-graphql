@@ -4,7 +4,7 @@ services:
   client:
     build: .
     volumes: 
-      - "./client:/app"
+      - "./client:/usr/project/ecom-react-graphql"
     environment:
       NODE_ENV: production
       LOCALHOST: localhost
@@ -16,7 +16,7 @@ services:
   server:
     build: .
     volumes: 
-      - "./server:/app"
+      - "./server:/usr/project/ecom-react-graphql"
     environment:
       NODE_ENV: production
       LOCALHOST: localhost
