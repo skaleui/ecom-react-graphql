@@ -5,7 +5,9 @@ services:
     image: ecommerce-react-graphql-stripe
     build: .
     environment:
-      NODE_ENV: production
+      NODE_ENV: development
+      LOCALHOST: skale1122
     ports:
       - 1337:1337
       - 8080:8080
+      - 27017:27017
