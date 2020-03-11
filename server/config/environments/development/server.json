@@ -1,4 +1,5 @@
 {
+  "host": "localhost1111",
   "port": 1337,
 
   "autoReload" : {
