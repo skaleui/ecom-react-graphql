@@ -1,0 +1,22 @@
+{
+  "name": "skalecomapp",
+  "description": "Simple Ecommerce Application with Strapi and Stripe.",
+  "version": "0.0.1",
+  "private": true,
+  "license": "Apache-2.0",
+  "author": "Shekhar Kale",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/skalesafe/ecom-react-graphql.git"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "scripts": {
+    "start": "(cd server && npm run start)",
+    "gcp-build": "(cd server && npm install)"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

@@ -1,0 +1,14 @@
+version: '2.1'
+
+services:
+  ecommerce-react-graphql-stripe:
+    image: ecommerce-react-graphql-stripe
+    build: .
+    environment:
+      NODE_ENV: development
+    ports:
+      - 1337:1337
+      - 8080:8080
+      - 9229:9229
+    ## set your startup file here
+    command: node --inspect=0.0.0.0:9229 index.js
