@@ -6,7 +6,7 @@ RUN mkdir /usr/project
 RUN cd /usr/project 
 EXPOSE 443
 
-RUN cd /usr/project && git clone -b gcp-deploy --single-branch https://github.com/skalesafe/ecom-react-graphql.git
+RUN cd /usr/project && git clone -b master --single-branch https://github.com/skalesafe/ecom-react-graphql.git
 
 WORKDIR /usr/project/ecom-react-graphql
 
