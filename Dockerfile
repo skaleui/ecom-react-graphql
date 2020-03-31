@@ -1,4 +1,4 @@
-FROM timbru31/node-alpine-git
+FROM tarampampam/node:13-alpine
 ENV NODE_ENV=development
 
 #RUN rmdir /usr/project
