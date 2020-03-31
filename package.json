@@ -1,0 +1,11 @@
+{
+  "name": "cloudbuild",
+  "private": true,
+  "version": "0.1.0",
+  "description": "cloud build script for Ecom-strapi-stripe",
+  "scripts": {
+    "server": "cd server && npm install && npm run start",
+    "client": "cd client && npm install && npm run start",
+    "start": "npm run server & npm run client"
+  }
+}
