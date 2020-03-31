@@ -1,0 +1,7 @@
+steps:
+- name: 'gcr.io/atomic-affinity-230700/github.com/skaleui/ecom-react-graphql@sha256:9146f684e6ce5be78c84d7e1c4f54bf1db83bbc92665a30ac9973bb49846961f'
+  entrypoint: npm
+  args: [
+    'run',
+    'start'
+  ]
