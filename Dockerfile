@@ -14,4 +14,4 @@ EXPOSE 27017
 EXPOSE 1337
 EXPOSE 3000
 
-CMD cd server && npm install && npm run build && npm run start
+CMD npm run start
