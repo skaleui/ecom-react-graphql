@@ -1,5 +1,5 @@
 steps:
-- name: 'gcr.io/$PROJECT_ID/docker-compose'
+- name: 'gcr.io/$PROJECT_ID/timbru31/node-alpine-git'
   args: ['up']
 - name: 'gcr.io/cloud-builders/docker'
   args: ['tag', 'workspace_app:latest', 'gcr.io/$PROJECT_ID/$REPO_NAME:$COMMIT_SHA']
