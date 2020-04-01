@@ -1,4 +1,6 @@
 steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'gcr.io/ecom-strapi/ecom-strapi-image11', '.']
 - name: node
   entrypoint: npm
   args: ['run', 'server']
