@@ -1,7 +1,7 @@
 FROM tarampampam/node:13-alpine
 ENV NODE_ENV=development
 
-git clone -b master --single-branch https://github.com/skalesafe/ecom-react-graphql.git
+CMD git clone -b master --single-branch https://github.com/skalesafe/ecom-react-graphql.git
 
 EXPOSE 27017
 EXPOSE 1337
