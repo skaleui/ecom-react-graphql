@@ -5,6 +5,3 @@ steps:
 - name: node
   entrypoint: npm
   args: ['run', 'client']
-- name: node
-  entrypoint: npm
-  args: ['run', 'start']
