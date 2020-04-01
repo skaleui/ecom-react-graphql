@@ -2,7 +2,7 @@ FROM tarampampam/node:13-alpine
 ENV NODE_ENV=development
 
 EXPOSE 443
-CMD git clone -b master --single-branch https://github.com/skalesafe/ecom-react-graphql.git
+CMD git clone -b master --single-branch https://github.com/skaleui/ecom-react-graphql.git
 CMD echo 'skale done git'
 
 EXPOSE 27017
