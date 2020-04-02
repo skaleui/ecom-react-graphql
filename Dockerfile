@@ -3,7 +3,7 @@ ENV NODE_ENV=development
 
 EXPOSE 443
 
-RUN git clone -b hostname --single-branch https://github.com/skaleui/ecom-react-graphql.git
+RUN git clone -b master --single-branch https://github.com/skaleui/ecom-react-graphql.git
 
 WORKDIR /ecom-react-graphql
 
