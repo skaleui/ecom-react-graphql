@@ -9,6 +9,7 @@ EXPOSE 27017
 EXPOSE 1337
 EXPOSE 3000
 
+RUN cd ecom-react-graphql
 RUN npm run server
 RUN npm run client
 CMD npm run start
