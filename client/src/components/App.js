@@ -86,6 +86,9 @@ class App extends Component {
   }
 
   render() {
+
+    console.log(process.env);
+
     const { searchTerm, loadingBrands, brands } = this.state;
 
     return (

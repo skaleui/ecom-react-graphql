@@ -4,10 +4,13 @@
   "version": "0.1.0",
   "description": "cloud build script for Ecom-strapi-stripe",
   "scripts": {
-     "server": "cd server && npm install && npm run build",
+    "server": "cd server && npm install && npm run build",
     "client": "cd client && npm install && npm run build",
     "start:client": "cd client && npm run start",
     "start:server": "cd server && npm run start",
     "start": "npm run start:server & npm run start:client"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0"
   }
 }

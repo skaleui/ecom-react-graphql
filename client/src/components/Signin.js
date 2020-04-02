@@ -1,11 +1,11 @@
 import React from 'react';
 import { Container, Box, Button, Heading, TextField } from 'gestalt';
-import { setToken } from '../utils';
+import { setToken, API_URL } from '../utils';
 import ToastMessage from './ToastMessage';
 import Strapi from 'strapi-sdk-javascript/build/main';
-const apiUrl = process.env.API_URL || 'http://localhost:1337';
-const strapi = new Strapi(apiUrl);
 
+const strapi = new Strapi(API_URL);
+console.log(API_URL);
 
 
 class Signin extends React.Component {
