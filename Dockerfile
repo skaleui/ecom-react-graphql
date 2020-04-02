@@ -3,14 +3,13 @@ ENV NODE_ENV=development
 
 EXPOSE 443
 
-RUN cd /usr/project && git clone -b master --single-branch https://github.com/skaleui/ecom-react-graphql.git
-
-WORKDIR /usr/project/ecom-react-graphql
+RUN git clone -b master --single-branch https://github.com/skaleui/ecom-react-graphql.git
 
 EXPOSE 27017
 EXPOSE 1337
 EXPOSE 3000
 
+RUN cd ecom-react-graphql
 RUN npm run server
 RUN npm run client
 CMD npm run start
