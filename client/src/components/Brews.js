@@ -3,10 +3,11 @@ import React from 'react';
 import Strapi from 'strapi-sdk-javascript/build/main';
 import { Box, Heading, Text, Image, Card, Button, Mask, IconButton} from 'gestalt';
 import { Link } from 'react-router-dom';
+import { API_URL } from '../utils'; 
 
 import { calculatePrice, getCart, setCart } from '../utils';
 
-const apiUrl = process.env.API_URL || 'http://localhost:1337';
+const apiUrl = API_URL || 'http://localhost:1337';
 const strapi = new Strapi(apiUrl);
 
 class Brews extends React.Component {
