@@ -1,8 +1,8 @@
 {
   "connection": "default",
-  "collectionName": "brews",
+  "collectionName": "Sodas",
   "info": {
-    "name": "Brew"
+    "name": "Soda"
   },
   "options": {
     "increments": true,
@@ -10,23 +10,21 @@
   },
   "attributes": {
     "name": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "description": {
       "type": "richtext"
     },
     "image": {
-      "model": "file",
+      "collection": "file",
       "via": "related",
       "plugin": "upload",
       "required": false
     },
-    "price": {
-      "type": "decimal"
-    },
     "brand": {
       "model": "brands",
-      "via": "brews"
+      "via": "sodas"
     },
     "category": {
       "model": "category"

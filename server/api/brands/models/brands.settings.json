@@ -23,8 +23,12 @@
       "required": false
     },
     "brews": {
-      "collection": "brew",
-      "via": "brand"
+      "via": "brand",
+      "collection": "brew"
+    },
+    "sodas": {
+      "via": "brand",
+      "collection": "soda"
     }
   }
 }

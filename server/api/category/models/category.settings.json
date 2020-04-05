@@ -1,8 +1,8 @@
 {
   "connection": "default",
-  "collectionName": "brews",
+  "collectionName": "Categories",
   "info": {
-    "name": "Brew"
+    "name": "Category"
   },
   "options": {
     "increments": true,
@@ -15,21 +15,11 @@
     "description": {
       "type": "richtext"
     },
-    "image": {
-      "model": "file",
+    "catimage": {
+      "collection": "file",
       "via": "related",
       "plugin": "upload",
       "required": false
-    },
-    "price": {
-      "type": "decimal"
-    },
-    "brand": {
-      "model": "brands",
-      "via": "brews"
-    },
-    "category": {
-      "model": "category"
     }
   }
 }
