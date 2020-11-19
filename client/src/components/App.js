@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Container, Box, Heading, Card, Image, Text, SearchField, Icon } from 'gestalt';
 import { Link } from 'react-router-dom';
-import { API_URL } from '../utils';
+import { API_URL, brandsQuery } from '../utils';
 
 import Loader from './Loader';
 import './App.css';
@@ -23,18 +23,7 @@ class App extends Component {
     try {
     const response = await strapi.request('POST', '/graphql', {
       data: {
-        query: `query {
-          brands {
-           _id
-            name
-            description
-            createdAt
-            image{
-              name,
-              url
-            }
-          }
-        }`
+        query: brandsQuery
       }
     });
     console.log(response);

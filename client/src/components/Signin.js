@@ -39,9 +39,12 @@ class Signin extends React.Component {
      //  set loading true
      this.setState({ loading: true });
 
+     console.log('submit', username, password);
+
       // make request to login with strapi
       const response = await strapi.login(username, password);
 
+      console.log('submit', response);
       // set loading false
       this.setState({ loading: false });
 

@@ -1,5 +1,6 @@
 const CART_KEY = 'cart';
 const TOKEN_KEY = 'jwt';
+const USER_INFO = 'user';
 
 
 export const calculatePrice = items => {
@@ -37,6 +38,7 @@ export const clearCart = (cartKey = CART_KEY) => {
   }
 }
 
+/* Auth */
 export const getToken = (tokenKey = TOKEN_KEY) => {
   if(localStorage && localStorage.getItem(tokenKey)) {
     return JSON.parse(localStorage.getItem(tokenKey));
@@ -56,4 +58,23 @@ export const clearToken = (tokenKey = TOKEN_KEY) => {
   }
 }
 
+export const getUser = (tokenKey = USER_INFO) => {
+  if(localStorage && localStorage.getItem(tokenKey)) {
+    return JSON.parse(localStorage.getItem(tokenKey));
+  }
+}
+
+export const setUser = (value, tokenKey = USER_INFO) => {
+  if(localStorage) {
+    localStorage.setItem(tokenKey, JSON.stringify(value));
+  }
+}
+
+export const clearUser = (tokenKey = USER_INFO) => {
+  if(localStorage) {
+    localStorage.removeItem(tokenKey);
+  }
+}
+
 export * from './Constants';
+export * from './queries';
